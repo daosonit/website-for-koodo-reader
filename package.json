@@ -13,7 +13,6 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "bootstrap": "4.4.1",
     "express": "^4.17.1",
     "i18next": "^19.4.4",
     "next": "^9.3.6",

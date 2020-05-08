@@ -1,0 +1,14 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.divider {
+  width: 100%;
+  height: 40px;
+}
+.changelogs {
+  margin-top: 93px;
+}

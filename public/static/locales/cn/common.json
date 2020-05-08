@@ -1,7 +1,8 @@
 {
-  "h1": "Ein einfaches Beispiel",
-  "change-locale": "Wechseln Locale",
-  "to-second-page": "Zur zweiten Seite",
-  "error-with-status": "Auf dem Server ist ein Fehler ({{statusCode}}) aufgetreten",
-  "error-without-status": "Auf dem Server ist ein Fehler aufgetreten"
+  "ready": "还在等什么？",
+  "ads": "快使用 Koodo Reader 来管理你的电子书吧！",
+  "download": "下载",
+  "preview": "预览",
+  "title": "开启全新 Epub 阅读体验",
+  "subtitle": "Koodo Reader 是一个免费开源的 Epub 阅读器，支持 Windows, Mac，Linux 和网页版"
 }

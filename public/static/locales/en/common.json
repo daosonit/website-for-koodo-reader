@@ -1,7 +1,8 @@
 {
-  "h1": "A simple example",
-  "change-locale": "Change locale",
-  "to-second-page": "To second page",
-  "error-with-status": "A {{statusCode}} error occurred on server",
-  "error-without-status": "An error occurred on the server"
+  "ready": "Ready to get started ?",
+  "ads": "All your books in one place, organized and safely stored",
+  "download": "DOWNLOAD",
+  "preview": "PREVIEW",
+  "title": "Read Epub books with Koodo Reader",
+  "subtitle": "Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
 }

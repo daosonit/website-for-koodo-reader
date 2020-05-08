@@ -1,3 +1,5 @@
 {
-  "description": "Dies ist eine Nicht-Seitenkomponente, die einen eigenen Namespace erfordert"
+  "privacy": "隐私策略",
+  "terms": "服务条款",
+  "support": "客户支持"
 }

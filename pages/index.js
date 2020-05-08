@@ -1,136 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { i18n, Link, withTranslation } from "../i18n";
+import { withTranslation } from "../i18n";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
-
+import MainFeature from "../components/mainFeature";
+import MoreFeature from "../components/moreFeature";
+import Ready from "../components/ready";
+import Cover from "../components/cover";
 const Homepage = ({ t }) => (
   <React.Fragment>
-    <main>
-      <Header />
-      <div>
-        <button
-          type="button"
-          onClick={() =>
-            i18n.changeLanguage(i18n.language === "en" ? "de" : "en")
-          }
-        >
-          {t("change-locale")}
-        </button>
-        <Link href="/second-page">
-          <button type="button">{t("to-second-page")}</button>
-        </Link>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm">One of three columns</div>
-            <div className="col-sm">One of three columns</div>
-            <div className="col-sm">One of three columns</div>
-          </div>
-        </div>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-      </div>
-    </main>
+    <Cover />
+    <Header />
+    <MainFeature />
+    <MoreFeature />
+    <Ready />
     <Footer />
   </React.Fragment>
 );
 
 Homepage.getInitialProps = async () => ({
-  namespacesRequired: ["common", "footer", "header"],
+  namespacesRequired: [
+    "common",
+    "footer",
+    "header",
+    "moreFeature",
+    "mainFeature",
+  ],
 });
 
 Homepage.propTypes = {

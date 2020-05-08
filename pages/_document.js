@@ -22,7 +22,6 @@ class CustomDocument extends Document {
             itemProp="description"
             content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
-          <meta itemProp="image" content="/static/images/social.png" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
@@ -37,7 +36,7 @@ class CustomDocument extends Document {
           <meta name="mobile-web-app-capable" content="yes" />
           <meta
             name="msapplication-config"
-            content="/static/icons/browserconfig.xml"
+            content="/icons/browserconfig.xml"
           />
           <meta name="msapplication-TileColor" content="#2B5797" />
           <meta name="msapplication-tap-highlight" content="no" />
@@ -50,63 +49,52 @@ class CustomDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/static/icons/apple-touch-icon.png"
+            href="/icons/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/static/icons/favicon-32x32.png"
+            href="/icons/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/static/icons/favicon-16x16.png"
+            href="/icons/favicon-16x16.png"
           />
-          <link rel="manifest" href="/static/icons/site.webmanifest" />
+          <link rel="manifest" href="/icons/site.webmanifest" />
           <link
             rel="mask-icon"
-            href="/static/icons/safari-pinned-tab.svg"
+            href="/icons/safari-pinned-tab.svg"
             color="#5bbad5"
           />
-          <link rel="shortcut icon" href="/static/icons/favicon.ico" />
+          <link rel="shortcut icon" href="/icons/favicon.ico" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta
             name="msapplication-config"
-            content="/static/icons/browserconfig.xml"
+            content="/icons/browserconfig.xml"
           />
           <meta name="theme-color" content="#ffffff" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
+          <script src="http://at.alicdn.com/t/font_1803854_ia4mnioote.js" />
           <link
+            href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.min.css"
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossOrigin="anonymous"
-          ></link>
-          <script
-            src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossOrigin="anonymous"
-          ></script>
-          <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossOrigin="anonymous"
-          ></script>
-          <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossOrigin="anonymous"
-          ></script>
-          <script src="http://at.alicdn.com/t/font_1803854_ia4mnioote.js"></script>
+          />
+          <link
+            href="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.css"
+            rel="stylesheet"
+          />
+          <script src="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
         </Head>
         <body>
           <Main />
           <NextScript />
+          <script>AOS.init();</script>
         </body>
       </Html>
     );
@@ -114,26 +102,3 @@ class CustomDocument extends Document {
 }
 
 export default CustomDocument;
-
-// import React from "react";
-// import Document, { Html, Head, Main, NextScript } from "next/document";
-
-// export default class extends Document {
-//   static async getInitialProps(ctx) {
-//     return await Document.getInitialProps(ctx);
-//   }
-
-//   render() {
-//     return (
-//       <Html>
-//         <Head>
-
-//         </Head>
-//         <body>
-//           <Main />
-//           <NextScript />
-//         </body>
-//       </Html>
-//     );
-//   }
-// }
