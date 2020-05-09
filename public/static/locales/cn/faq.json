@@ -1,0 +1,12 @@
+{
+  "title": "帮助",
+  "subtitle": "关于 Koodo Reader 您可能关心的东西",
+  "question1": "Koodo Reader 是什么？",
+  "answer1": "Koodo Reader 是一个免费开源的 Epub 阅读器，诞生于2020年春，因为当时正在爆发新冠病毒，停工停学，开发者才有时间开发这个软件",
+  "question2": "Koodo Reader 对系统有什么要求？",
+  "answer2": "对于 Mac, Koodo Reader 要求 macOS 10.10 (Yosemite) 及以上系统. 对于 Windows, 要求 Windows 7 及以上系统",
+  "question3": "如何备份和恢复数据？",
+  "answer3": "点击右上角的 “备份和恢复” 按钮按照提示一步步操作就可以了，备份的文件以 zip 的形式保存，文件名为备份日期。",
+  "question4": "我要如何联系你？",
+  "answer4": "对于问题咨询，功能改进和 bug 反馈请前往客户支持页面，您也可以直接通过邮箱的方式与开发者取得联系。"
+}

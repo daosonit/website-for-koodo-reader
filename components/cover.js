@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { withTranslation, Link } from "../i18n";
-
+const screenWidth =
+  document.documentElement.clientWidth || document.body.clientWidth;
+console.log(screenWidth);
 const Cover = ({ t }) => (
   <div className="container-fluid  cover-bg">
     <img src="/images/cover.jpg" alt="Koodo Reader Cover" className="cover" />
@@ -13,7 +15,7 @@ const Cover = ({ t }) => (
           style={{ height: "100%" }}
         >
           <div
-            className="col-xl-6 col-lg-7 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 aos-init aos-animate"
+            className="col-xl-6 col-lg-7 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 aos-init"
             data-aos="fade-right"
           >
             <h1 className="title">{t("title")}</h1>
@@ -24,11 +26,12 @@ const Cover = ({ t }) => (
               data-aos-delay="100"
             >
               <div className="row justify-content-start mt-4">
-                <div className="row download-button col-4 m-3 justify-content-center align-items-center">
-                  <Link href="/download">
+                <Link href="/download">
+                  <div className="row download-button col-4 m-3 justify-content-center align-items-center">
                     <div>{t("download")}</div>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
+
                 <div className="row preview-button col-4 m-3 justify-content-center align-items-center">
                   <a
                     href="https://troyeguo.gitee.io/koodo-web/"
@@ -64,26 +67,40 @@ const Cover = ({ t }) => (
         height: 600px;
       }
       .cover {
-        height: 100%;
+        height: 600px;
         position: absolute;
         top: 0px;
         right: 0px;
       }
       .title {
-        font-size: 45px;
+        font-size: calc(1rem + 2.5vw);
         font-weight: bold;
-        line-height: 55px;
+        line-height: 1.2;
         color: rgba(255, 255, 255, 1);
         opacity: 1;
         margin-top: 60px;
       }
       .subtitle {
-        font-size: 19px;
-        font-weight: 400;
-        line-height: 25px;
+        font-size: 1.25rem;
+        line-height: 1.5;
         color: rgba(190, 190, 190, 1);
         opacity: 1;
         margin-top: 20px;
+      }
+      @media (max-width: 991.98px) {
+        .title {
+          margin-top: 100px;
+        }
+        .subtitle {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+        .cover-bg {
+          height: ${screenWidth}px;
+        }
+        .cover {
+          height: ${screenWidth}px;
+        }
       }
       .bg-dark {
         height: 100%;

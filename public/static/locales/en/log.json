@@ -1,0 +1,16 @@
+{
+  "log-title": "CHANGELOG",
+  "log-subtitle": "What's new about each version of Koodo Reader",
+  "fix1-1-7": "Fix the bug causing blank screen after importing the backup file",
+  "fix2-1-7": "Delete extra testing code from source code",
+  "fix3-1-7": "Remove the padding setting from setting panel",
+  "fix4-1-7": "Bolden some options' title",
+  "new1-1-7": "Refactor the whole project with TypeScript",
+  "new2-1-7": "The orignal JavaScript code is kept in JavaScript branch ",
+  "fix1-1-8": "Fix the bug causing blank screen after importing the backup file",
+  "fix2-1-8": "Delete extra testing code from source code",
+  "fix3-1-8": "Remove the padding setting from setting panel",
+  "fix4-1-8": "Bolden some options' title",
+  "new1-1-8": "Refactor the whole project with TypeScript",
+  "new2-1-8": "The orignal JavaScript code is kept in JavaScript branch "
+}

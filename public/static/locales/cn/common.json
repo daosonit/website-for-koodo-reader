@@ -4,5 +4,20 @@
   "download": "下载",
   "preview": "预览",
   "title": "开启全新 Epub 阅读体验",
-  "subtitle": "Koodo Reader 是一个免费开源的 Epub 阅读器，支持 Windows, Mac，Linux 和网页版"
+  "subtitle": "Koodo Reader 是一个免费开源的 Epub 阅读器，支持 Windows, Mac，Linux 和网页版",
+  "share-title": "分享给更多朋友",
+  "share-subtitle": "把你对 Koodo Reader 的喜爱分享给更多的人",
+  "twitter": "推特",
+  "facebook": "脸书",
+  "weibo": "微博",
+  "support": "客户支持",
+  "support-subtitle": "您可以通过以下方式与开发者取得联系",
+  "feedback": "反馈",
+  "feedback-subtitle": "对于问题咨询，功能改进和 bug 反馈，请填写下面的腾讯问卷进行反馈。",
+  "email": "邮箱",
+  "email-subtitle": "如果您也可以直接通过邮箱 guo362429@gmail.com 与开发者取得联系。",
+  "error": "你来到了没有知识的荒原",
+  "back": "返回首页",
+  "privacy": "隐私策略",
+  "terms": "服务条款"
 }

@@ -11,7 +11,7 @@ const Header = ({ t, router }) => {
       if (e.wheelDelta) {
         let offsetHeight =
           document.body.scrollTop || document.documentElement.scrollTop;
-        if (offsetHeight > 450) {
+        if (offsetHeight > 150) {
           setTheme("light");
         } else {
           setTheme("dark");
@@ -21,7 +21,7 @@ const Header = ({ t, router }) => {
         let offsetHeight =
           document.body.scrollTop || document.documentElement.scrollTop;
         console.log(offsetHeight);
-        if (offsetHeight > 450) {
+        if (offsetHeight > 150) {
           setTheme("light");
         } else {
           setTheme("dark");
@@ -43,8 +43,8 @@ const Header = ({ t, router }) => {
     <div
       className={
         theme === "dark" && routeName === "/"
-          ? "container-fluid header-warper froze"
-          : "container-fluid header-warper scroll"
+          ? "container-fluid header-wrapper froze"
+          : "container-fluid header-wrapper scroll"
       }
     >
       <div className="container">
@@ -62,6 +62,7 @@ const Header = ({ t, router }) => {
                   <svg className={"icon icon-black"} aria-hidden="true">
                     <use href="#icon-zu48"></use>
                   </svg>
+                  <span className="header-name">Koodo Reader</span>
                 </a>
               )}
             </Link>
@@ -70,13 +71,13 @@ const Header = ({ t, router }) => {
           <div>
             <ul className="row">
               <li className="col-auto my-2 py-4">
-                <Link href="/about">
+                <Link href="/faq">
                   <a
                     className={
                       theme === "dark" && routeName === "/" ? "froze" : ""
                     }
                   >
-                    {t("about")}
+                    {t("faq")}
                   </a>
                 </Link>
               </li>
@@ -92,16 +93,29 @@ const Header = ({ t, router }) => {
                 </Link>
               </li>
               <li className="col-auto my-2 py-4">
-                <Link href="/donate">
+                <Link href="/support">
                   <a
                     className={
                       theme === "dark" && routeName === "/" ? "froze" : ""
                     }
                   >
-                    {t("donate")}
+                    {t("support")}
                   </a>
                 </Link>
               </li>
+              {
+                // <li className="col-auto my-2 py-4">
+                //   <Link href="/donate">
+                //     <a
+                //       className={
+                //         theme === "dark" && routeName === "/" ? "froze" : ""
+                //       }
+                //     >
+                //       {t("donate")}
+                //     </a>
+                //   </Link>
+                // </li>
+              }
               <div className={"navbar-collapse row mr-4 ml-2"}>
                 <li className="col-auto my-2 py-4">
                   <a
@@ -114,34 +128,6 @@ const Header = ({ t, router }) => {
                   >
                     <svg className="icon" aria-hidden="true">
                       <use href="#icon-github"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li className="col-auto my-2 py-4">
-                  <a
-                    href="https://dribbble.com/troyeguo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={
-                      theme === "dark" && routeName === "/" ? "froze" : ""
-                    }
-                  >
-                    <svg className="icon" aria-hidden="true">
-                      <use href="#icon-dribbble"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li className="col-auto my-2 py-4">
-                  <a
-                    href="https://www.linkedin.com/in/troyeguo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={
-                      theme === "dark" && routeName === "/" ? "froze" : ""
-                    }
-                  >
-                    <svg className="icon" aria-hidden="true">
-                      <use href="#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -165,17 +151,17 @@ const Header = ({ t, router }) => {
                 </li>
                 {theme === "dark" && routeName === "/" ? null : (
                   <li className="col-auto py-4">
-                    <div
-                      className={
-                        "download-button row justify-content-center align-items-center"
-                      }
-                    >
-                      <div>
-                        <Link href="/download">
+                    <Link href="/download">
+                      <div
+                        className={
+                          "download-button row justify-content-center align-items-center"
+                        }
+                      >
+                        <div>
                           <a>{t("download")}</a>
-                        </Link>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   </li>
                 )}
               </div>
@@ -184,9 +170,9 @@ const Header = ({ t, router }) => {
         </div>
       </div>
       <style jsx>{`
-        .header-warper {
+        .header-wrapper {
           opacity: 1;
-          font-size: 18px;
+          font-size: calc(0.9rem + 0.2vw);
           font-weight: 500;
           line-height: 24px;
           position: fixed;
@@ -194,16 +180,17 @@ const Header = ({ t, router }) => {
           z-index: 10;
           height: 93px;
         }
-
-        .icon-black {
-          font-size: 4.5rem;
+        .header-name {
+          display: inline-block;
+          font-size: 1.3rem;
+          position: relative;
+          bottom: 15px;
+          left: 10px;
+          font-weight: 500;
+          opacity: 0.8;
         }
-        .download-button {
-          width: 175px;
-          height: 46px;
-          background: rgba(255, 226, 183, 1);
-          opacity: 1;
-          border-radius: 23px;
+        .icon-black {
+          font-size: calc(2.8rem + 2.3vw);
         }
         .froze {
           color: white;
@@ -217,6 +204,13 @@ const Header = ({ t, router }) => {
         @media all and (max-width: 992px) {
           .navbar-collapse {
             display: none;
+          }
+          .header-name {
+            display: none;
+          }
+          .header-wrapper {
+            height: 70px;
+            line-height: 10px;
           }
         }
       `}</style>

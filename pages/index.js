@@ -13,6 +13,7 @@ const Homepage = ({ t }) => (
   <React.Fragment>
     <Cover />
     <Header />
+    <div className="divider"></div>
     <MainFeature />
     <MoreFeature />
     <Ready />
@@ -21,13 +22,7 @@ const Homepage = ({ t }) => (
 );
 
 Homepage.getInitialProps = async () => ({
-  namespacesRequired: [
-    "common",
-    "footer",
-    "header",
-    "moreFeature",
-    "mainFeature",
-  ],
+  namespacesRequired: ["common", "header", "moreFeature", "mainFeature"],
 });
 
 Homepage.propTypes = {

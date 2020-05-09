@@ -20,12 +20,13 @@ const Ready = ({ t }) => (
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <div className="row justify-content-center mt-4">
-            <div className="row download-button col-2 m-3 justify-content-center align-items-center">
-              <Link href="/download">
+          <div className="row justify-content-center mt-5">
+            <Link href="/download">
+              <div className="row download-button col-2 m-3 justify-content-center align-items-center">
                 <div>{t("download")}</div>
-              </Link>
-            </div>
+              </div>
+            </Link>
+
             <div className="row preview-button col-2 m-3 justify-content-center align-items-center">
               <a
                 href="https://troyeguo.gitee.io/koodo-web/"
@@ -41,26 +42,27 @@ const Ready = ({ t }) => (
     </div>
     <style jsx>{`
       .question-wrapper {
-        height: 334px;
+        height: 454px;
         background: rgba(255, 226, 183, 1);
         opacity: 1;
         margin-bottom: 80px;
       }
       .question {
-        font-size: 40px;
+        font-size: calc(1rem + 2.5vw);
         font-weight: bold;
         line-height: 80px;
         color: rgba(0, 0, 0, 1);
         opacity: 0.83;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 130px;
       }
       .ads {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 500;
         color: rgba(85, 90, 100, 1);
         opacity: 1;
         text-align: center;
+        line-height: 1.5;
       }
       .download-button {
         width: 175px;
@@ -87,6 +89,11 @@ const Ready = ({ t }) => (
         line-height: 24px;
         color: rgba(0, 0, 0, 0.7);
         opacity: 1;
+      }
+      @media (max-width: 992px) {
+        .ads {
+          font-size: 17px;
+        }
       }
     `}</style>
   </section>

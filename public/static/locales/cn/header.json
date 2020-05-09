@@ -1,7 +1,8 @@
 {
-  "about": "关于",
-  "log": "日志",
+  "faq": "帮助",
+  "log": "更新日志",
   "donate": "捐赠",
   "lang": "English",
-  "download": "下载"
+  "download": "下载",
+  "support": "客户支持"
 }

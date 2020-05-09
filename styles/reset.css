@@ -150,5 +150,5 @@ li {
 html,
 body {
   width: 100%;
-  user-select: none;
+  user-select: text;
 }

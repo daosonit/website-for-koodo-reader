@@ -11,14 +11,8 @@ const Footer = ({ t }) => (
       </Link>
     </div>
     <div className="col-auto">
-      <Link href="/privacy">
+      <Link href="/terms">
         <a className="link">{t("terms")}</a>
-      </Link>
-    </div>
-    <div className="col-auto">
-      {" "}
-      <Link href="/privacy">
-        <a className="link">{t("support")}</a>
       </Link>
     </div>
 
@@ -46,10 +40,10 @@ const Footer = ({ t }) => (
   </section>
 );
 Footer.getInitialProps = async () => ({
-  namespacesRequired: ["footer"],
+  namespacesRequired: ["common"],
 });
 Footer.propTypes = {
   t: PropTypes.func.isRequired,
 };
 
-export default withTranslation("footer")(Footer);
+export default withTranslation("common")(Footer);

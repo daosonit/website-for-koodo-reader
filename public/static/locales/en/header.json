@@ -1,7 +1,8 @@
 {
-  "about": "ABOUT",
-  "log": "LOG",
+  "faq": "FAQ",
+  "log": "CHANGELOG",
   "donate": "DONATE",
   "lang": "简体中文",
-  "download": "DOWNLOAD"
+  "download": "DOWNLOAD",
+  "support": "SUPPORT"
 }

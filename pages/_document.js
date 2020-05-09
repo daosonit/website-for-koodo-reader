@@ -22,25 +22,35 @@ class CustomDocument extends Document {
             itemProp="description"
             content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
-          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://koodo.960960.xyz" />
           <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="default"
+            property="og:title"
+            content="Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web"
           />
-          <meta name="apple-mobile-web-app-title" content="Koodo Reader" />
           <meta
-            name="description"
-            content="Free Epub Reader for Windows, Mac, Linux and Web"
+            property="og:description"
+            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
           />
-          <meta name="format-detection" content="telephone=no" />
-          <meta name="mobile-web-app-capable" content="yes" />
           <meta
-            name="msapplication-config"
-            content="/icons/browserconfig.xml"
+            property="og:image"
+            content="https://koodo.960960.xyz/images/meta.png"
           />
-          <meta name="msapplication-TileColor" content="#2B5797" />
-          <meta name="msapplication-tap-highlight" content="no" />
-          <meta name="theme-color" content="#000000" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://koodo.960960.xyz" />
+          <meta
+            property="twitter:title"
+            content="Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web"
+          />
+          <meta
+            property="twitter:description"
+            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+          />
+          <meta
+            property="twitter:image"
+            content="https://koodo.960960.xyz/images/meta.png"
+          />
           <meta
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
@@ -80,7 +90,7 @@ class CustomDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
-          <script src="http://at.alicdn.com/t/font_1803854_ia4mnioote.js" />
+          <script src="http://at.alicdn.com/t/font_1803854_uzl9qy8xfe.js" />
           <link
             href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.min.css"
             rel="stylesheet"
