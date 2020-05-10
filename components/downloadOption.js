@@ -42,7 +42,7 @@ const DownloadDemo = ({ t }) => {
           height: 27px;
           font-size: 20px;
           font-family: Segoe UI;
-          font-weight: bold;
+          font-weight: 500;
           line-height: 27px;
           color: rgba(0, 0, 0, 1);
           opacity: 1;

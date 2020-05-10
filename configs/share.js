@@ -3,13 +3,14 @@ export const shareOptions = [
     id: 1,
     icon: "twitter",
     url:
-      "https://twitter.com/intent/tweet?text=Koodo+Reader+-+Free+Epub+Reader+for+Windows%2C+Mac%2C+Linux+and+Web+https%3A%2F%2Fkoodo.960960.xyz",
+      "https://twitter.com/intent/tweet?text=Koodo+Reader+-+Free+Epub+Reader+for+Windows%2C+Mac%2C+Linux+and+Web+&url=https%3A%2F%2Fkoodo.960960.xyz",
     color: "rgba(29, 162, 242, 1)",
   },
   {
     id: 2,
     icon: "facebook",
-    url: "https://www.facebook.com/sharer/sharer.php?u=koodo.960960.xyz",
+    url:
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkoodo.960960.xyz",
     color: "rgba(60, 88, 151, 1)",
   },
   {
