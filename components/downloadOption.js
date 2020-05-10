@@ -18,7 +18,11 @@ const DownloadDemo = ({ t }) => {
           </svg>
           <h1 className="download-title col-12 my-2">{item.title}</h1>
           <a
-            href="https://github.com/troyeguo/koodo-reader/releases/download/v0.1.7/Koodo.Reader-Web-Setup-0.1.7.exe"
+            href={
+              item.id === 4
+                ? "https://troyeguo.gitee.io/koodo-web"
+                : "https://github.com/troyeguo/koodo-reader/releases/download/v0.1.7/Koodo.Reader-Web-Setup-0.1.7.exe"
+            }
             target="_blank"
             rel="noopener noreferrer"
           >
