@@ -37,7 +37,7 @@ const Error = ({ statusCode, t }) => (
         .wrap-404 .content-error h1 {
           color: #434e59;
           font-size: 72px;
-          font-weight: 600;
+          font-weight: bold;
           line-height: 72px;
           margin-bottom: 24px;
         }

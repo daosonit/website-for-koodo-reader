@@ -59,7 +59,7 @@ const MoreFeature = ({ t }) => {
         }
         @media (max-width: 992px) {
           .more-question {
-            margin: 20px 0px;
+            margin: 40px 0px;
           }
           .more-subtitle {
             padding: 0px 30px;

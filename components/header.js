@@ -211,6 +211,7 @@ const Header = ({ t, router }) => {
           .header-wrapper {
             height: 70px;
             line-height: 10px;
+            position: absolute;
           }
         }
       `}</style>

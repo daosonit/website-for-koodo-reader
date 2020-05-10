@@ -1,9 +1,25 @@
-# Simple example: next-i18next
+<h1 align="center">Koodo Reader 的官网代码仓库</h1>
+<h3 align="center">A PWA Spotify web player written in Next.js</h3>
 
-## What is this?
+### 技术栈
 
-This subdirectory is a simple example of how to use [next-i18next](https://github.com/isaachinman/next-i18next) with [NextJs](https://github.com/zeit/next.js) to get translations up and running quickly and easily, while fully supporting SSR, multiple namespaces with codesplitting, etc.
+使用 Next.js 实现服务端渲染，使用 Bootstrap 实现响应式，使用 next-i18next 实现国际化，使用 aos 实现页面动画
 
-## For more info...
+### 网站地址
 
-You may have arrived here from the [NextJs](https://github.com/zeit/next.js) repository, or the [react-i18next](https://github.com/i18next/react-i18next/) repository. Either way, for more documentation, please visit the [main README](https://github.com/isaachinman/next-i18next).
+网站托管在 Heroku 上，由于免费应用的限制，网站需要 10s 左右才能启动，请耐心等待
+
+[点我前往](https://koodo.960960.xyz)
+
+### 运行源码
+
+```bash
+git clone https://github.com/troyeguo/website-for-koodo-reader.git
+cd website-for-koodo-reader
+yarn
+yarn dev
+```
+
+### 反馈
+
+请在 issue 区提交您的反馈
