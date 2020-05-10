@@ -8,7 +8,7 @@ const DownloadDemo = ({ t }) => {
     return downloadOptions.map((item) => {
       return (
         <div
-          className="download-item col-md-6 col-lg-3 mb-4 mb-md-5 aos-init row my-5 justify-content-center"
+          className="download-item col-md-6 col-lg-3 mb-4 mb-md-5 aos-init row my-lg-5 justify-content-center ml-1"
           data-aos="fade-up"
           data-aos-delay={50 + item.id * 50}
           key={item.id}
@@ -35,7 +35,7 @@ const DownloadDemo = ({ t }) => {
       <div className="row justify-content-between">{renderDownload()}</div>
       <style global jsx>{`
         .download-icon {
-          font-size: 4rem;
+          font-size: calc(1rem + 4vw);
         }
         .download-title {
           width: 84px;

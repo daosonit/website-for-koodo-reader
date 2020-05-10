@@ -61,7 +61,7 @@ const Log = ({ t }) => {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-lg-7  p-0 m-0">
+            <div className="col-lg-7  p-0 m-0 mt-4">
               {renderNew(generateLogsInfo(true, item))}
               {renderFix(generateLogsInfo(false, item))}
             </div>
@@ -73,8 +73,8 @@ const Log = ({ t }) => {
   return (
     <div>
       <Header />
-      <div className="container bg-dynamic">
-        <div className="row section-title justify-content-center text-center">
+      <div className="container bg-dynamic mb-4">
+        <div className="row section-title justify-content-center text-center ">
           <div className="col-md-9 col-lg-8 col-xl-7">
             <h1 className="page-title">{t("log-title")}</h1>
             <p className="page-subtitle">{t("log-subtitle")}</p>

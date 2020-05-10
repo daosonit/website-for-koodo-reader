@@ -15,44 +15,46 @@ const Support = ({ t }) => {
               <p className="page-subtitle">{t("support-subtitle")}</p>
             </div>
           </div>
-          <div className="row col-lg-8 col-md-10 mt-5 offset-lg-2">
-            <div className="row  mt-4 justify-content-start">
-              <div className="col-2 pr-0 row justify-content-center">
-                <svg className="icon form-icon" aria-hidden="true">
-                  <use href={`#icon-zu59`}></use>
-                </svg>
-              </div>
-              <div className="col-10">
-                <div className=" feedback-title">{t("feedback")}</div>
-                <div className="feedback-subtitle">
-                  {t("feedback-subtitle")}
+          <div className="row mt-lg-5 justify-content-center">
+            <div>
+              <div className="row mt-4 justify-content-start">
+                <div className="col-2 pr-0 row justify-content-center">
+                  <svg className="icon form-icon" aria-hidden="true">
+                    <use href={`#icon-zu59`}></use>
+                  </svg>
                 </div>
-                <a
-                  href="https://forms.gle/mHzE3g9RE9BG6X9R8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="form-link mt-2">Google Forms</div>
-                </a>
+                <div className="col-10">
+                  <div className=" feedback-title">{t("feedback")}</div>
+                  <div className="feedback-subtitle">
+                    {t("feedback-subtitle")}
+                  </div>
+                  <a
+                    href="https://forms.gle/mHzE3g9RE9BG6X9R8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="form-link mt-2">Google Forms</div>
+                  </a>
 
-                <a
-                  href="https://wj.qq.com/s2/5565378/4b3f"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="form-link">腾讯问卷</div>
-                </a>
+                  <a
+                    href="https://wj.qq.com/s2/5565378/4b3f"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="form-link">腾讯问卷</div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="row  mt-4 justify-content-start">
-              <div className="col-2 pr-0 row justify-content-center">
-                <svg className="icon form-icon" aria-hidden="true">
-                  <use href={`#icon-zu60`}></use>
-                </svg>
-              </div>
-              <div className="col-10">
-                <div className="feedback-title">{t("email")}</div>
-                <div className="feedback-subtitle">{t("email-subtitle")}</div>
+              <div className="row  mt-4 justify-content-start">
+                <div className="col-2 pr-0 row justify-content-center">
+                  <svg className="icon form-icon" aria-hidden="true">
+                    <use href={`#icon-zu60`}></use>
+                  </svg>
+                </div>
+                <div className="col-10">
+                  <div className="feedback-title">{t("email")}</div>
+                  <div className="feedback-subtitle">{t("email-subtitle")}</div>
+                </div>
               </div>
             </div>
           </div>
@@ -93,7 +95,7 @@ const Support = ({ t }) => {
             font-size: 15px;
           }
           .form-icon {
-            font-size: 45px;
+            display:none
           }
         }
       `}</style>

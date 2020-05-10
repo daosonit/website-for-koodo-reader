@@ -77,3 +77,12 @@
     padding: 0px 60px;
   }
 }
+.share-button {
+          width: 116px;
+          height: 48px;
+          opacity: 1;
+          border-radius: 24px;
+          color: white;
+          font-size: 1rem;
+          cursor: pointer;
+        }

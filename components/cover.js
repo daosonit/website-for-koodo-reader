@@ -2,9 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { withTranslation, Link } from "../i18n";
-const screenWidth =
-  document.documentElement.clientWidth || document.body.clientWidth;
-console.log(screenWidth);
 const Cover = ({ t }) => (
   <div className="container-fluid  cover-bg">
     <img src="/images/cover.jpg" alt="Koodo Reader Cover" className="cover" />
@@ -96,10 +93,10 @@ const Cover = ({ t }) => (
           line-height: 1.5;
         }
         .cover-bg {
-          height: ${screenWidth}px;
+          height: 100vw;
         }
         .cover {
-          height: ${screenWidth}px;
+          height: 100vw;
         }
       }
       .bg-dark {

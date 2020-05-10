@@ -10,9 +10,15 @@ const Homepage = ({ t }) => (
   <React.Fragment>
     <Header />
     <div className="container">
-      <section className="container row justify-content-center demo-container">
-        <div className="demo-title my-5">Koodo Reader</div>
-        <img src="/images/demo.png" alt="Koodo Reader demo" className="demo" />
+      <section className="row justify-content-center demo-container">
+        <div>
+          <div className="demo-title my-5">Koodo Reader</div>
+          <img
+            src="/images/demo.png"
+            alt="Koodo Reader demo"
+            className="demo"
+          />
+        </div>
       </section>
       <DownloadOption />
       <Share />
