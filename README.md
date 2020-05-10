@@ -1,4 +1,4 @@
-<h1 align="center">Koodo Reader 的官网代码仓库</h1>
+<h1 align="center">Koodo Reader 的网站源码</h1>
 
 ### 技术栈
 
