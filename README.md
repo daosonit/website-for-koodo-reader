@@ -1,5 +1,9 @@
 <h1 align="center">Koodo Reader 的网站源码</h1>
 
+### 预览
+
+<img src="/public/images/meta.png">
+
 ### 技术栈
 
 使用 **Next.js** 实现服务端渲染，使用 **Bootstrap** 实现响应式，使用 **next-i18next** 实现国际化，使用 **aos** 实现页面动画
