@@ -50,7 +50,7 @@ const MoreFeature = ({ t }) => {
           opacity: 1;
         }
         .more-question {
-          font-size: calc(1rem + 2.5vw);
+          font-size: calc(1rem + 2.2vw);
           font-weight: bold;
           color: rgba(0, 0, 0, 1);
           opacity: 1;

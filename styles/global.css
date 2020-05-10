@@ -42,7 +42,7 @@
   margin-top: 93px;
 }
 .h1 {
-  font-size: calc(1rem + 1.7vw);
+  font-size: calc(1rem + 1.5vw);
   font-weight: bold;
   line-height: 1.25;
   color: rgba(0, 0, 0, 1);
@@ -78,11 +78,11 @@
   }
 }
 .share-button {
-          width: 116px;
-          height: 48px;
-          opacity: 1;
-          border-radius: 24px;
-          color: white;
-          font-size: 1rem;
-          cursor: pointer;
-        }
+  width: 116px;
+  height: 48px;
+  opacity: 1;
+  border-radius: 24px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}

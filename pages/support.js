@@ -17,7 +17,7 @@ const Support = ({ t }) => {
           </div>
           <div className="row mt-lg-5 justify-content-center">
             <div>
-              <div className="row mt-4 justify-content-start">
+              <div className="row mt-4 justify-content-start mr-0 ml-0">
                 <div className="col-2 pr-0 row justify-content-center">
                   <svg className="icon form-icon" aria-hidden="true">
                     <use href={`#icon-zu59`}></use>
@@ -45,7 +45,7 @@ const Support = ({ t }) => {
                   </a>
                 </div>
               </div>
-              <div className="row  mt-4 justify-content-start">
+              <div className="row  mt-4 justify-content-start  mr-0 ml-0">
                 <div className="col-2 pr-0 row justify-content-center">
                   <svg className="icon form-icon" aria-hidden="true">
                     <use href={`#icon-zu60`}></use>
@@ -62,7 +62,7 @@ const Support = ({ t }) => {
       </section>
       <style jsx>{`
         .feedback-title {
-          font-size: calc(1rem + 1vw);
+          font-size: calc(1rem + 0.7vw);
           font-weight: 500;
           line-height: 43px;
           color: rgba(0, 0, 0, 1);
@@ -95,7 +95,7 @@ const Support = ({ t }) => {
             font-size: 15px;
           }
           .form-icon {
-            display:none
+            display: none;
           }
         }
       `}</style>
