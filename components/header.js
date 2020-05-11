@@ -75,7 +75,7 @@ const Header = ({ t, router }) => {
             <ul className={"row header-collapse mt-4 mr-0"}>
               {!collapse ? (
                 <div className="row ">
-                  <li className="col-lg-auto mt-3">
+                  <li className="col-lg-auto mt-2">
                     <Link href="/faq">
                       <a
                         className={
@@ -86,7 +86,7 @@ const Header = ({ t, router }) => {
                       </a>
                     </Link>
                   </li>
-                  <li className="col-lg-auto mt-3">
+                  <li className="col-lg-auto mt-2">
                     <Link href="/log">
                       <a
                         className={
@@ -97,7 +97,7 @@ const Header = ({ t, router }) => {
                       </a>
                     </Link>
                   </li>
-                  <li className="col-lg-auto mt-3">
+                  <li className="col-lg-auto mt-2">
                     <Link href="/support">
                       <a
                         className={
@@ -108,7 +108,7 @@ const Header = ({ t, router }) => {
                       </a>
                     </Link>
                   </li>
-                  <li className="col-lg-auto mt-3">
+                  <li className="col-lg-auto mt-2">
                     <a
                       href="https://github.com/troyeguo/koodo-reader"
                       target="_blank"
@@ -126,7 +126,7 @@ const Header = ({ t, router }) => {
                     onClick={() =>
                       i18n.changeLanguage(i18n.language === "en" ? "cn" : "en")
                     }
-                    className="col-lg-auto mt-3 pb-3"
+                    className="col-lg-auto mt-2 pb-3"
                   >
                     <a
                       href="#"
@@ -143,7 +143,7 @@ const Header = ({ t, router }) => {
                 </div>
               ) : null}
               <div className="row shadow-nav">
-                <li className="col-lg-auto mt-3">
+                <li className="col-lg-auto mt-2">
                   <Link href="/faq">
                     <a
                       className={
@@ -154,7 +154,7 @@ const Header = ({ t, router }) => {
                     </a>
                   </Link>
                 </li>
-                <li className="col-lg-auto mt-3">
+                <li className="col-lg-auto mt-2">
                   <Link href="/log">
                     <a
                       className={
@@ -165,7 +165,7 @@ const Header = ({ t, router }) => {
                     </a>
                   </Link>
                 </li>
-                <li className="col-lg-auto mt-3">
+                <li className="col-lg-auto mt-2">
                   <Link href="/support">
                     <a
                       className={
@@ -176,7 +176,7 @@ const Header = ({ t, router }) => {
                     </a>
                   </Link>
                 </li>
-                <li className="col-lg-auto mt-3">
+                <li className="col-lg-auto mt-2">
                   <a
                     href="https://github.com/troyeguo/koodo-reader"
                     target="_blank"
@@ -194,7 +194,7 @@ const Header = ({ t, router }) => {
                   onClick={() =>
                     i18n.changeLanguage(i18n.language === "en" ? "cn" : "en")
                   }
-                  className="col-lg-auto mt-3 pb-3"
+                  className="col-lg-auto mt-2 pb-3"
                 >
                   <a
                     href="#"
@@ -306,8 +306,8 @@ const Header = ({ t, router }) => {
             display: none;
           }
           .header-collapse {
-            background-color: ${theme === "light"
-              ? "rgba(230,230,230,0.9)"
+            background-color: ${theme === "light" || routeName !== "/"
+              ? "rgba(240,240,240,0.9)"
               : "rgba(0, 0, 0, 0.9)"};
             text-align: center;
             line-height: 40px;
