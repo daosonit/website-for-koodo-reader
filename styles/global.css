@@ -58,10 +58,10 @@
 }
 @media (max-width: 992px) {
   .download-button {
-    display: none;
+    /* display: none; */
   }
   .preview-button {
-    display: none;
+    /* display: none; */
   }
   .h1,
   .lead {

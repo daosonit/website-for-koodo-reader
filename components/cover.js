@@ -18,24 +18,24 @@ const Cover = ({ t }) => (
             <h1 className="title">{t("title")}</h1>
             <p className="subtitle">{t("subtitle")}</p>
             <div
-              className="container aos-init"
+              className="container aos-init cover-button"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div className="row justify-content-start mt-4">
+              <div className="row justify-content-md-start mt-4 cover-button">
                 <Link href="/download">
-                  <div className="row download-button col-4 m-3 justify-content-center align-items-center">
+                  <div className="row download-button m-2  justify-content-center align-items-center">
                     <div>{t("download")}</div>
                   </div>
                 </Link>
 
-                <div className="row preview-button col-4 m-3 justify-content-center align-items-center">
+                <div className="row preview-button m-2  justify-content-center align-items-center">
                   <a
                     href="https://troyeguo.gitee.io/koodo-web/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div>{t("preview")}</div>
+                    {t("preview")}
                   </a>
                 </div>
               </div>
@@ -84,7 +84,7 @@ const Cover = ({ t }) => (
         opacity: 1;
         margin-top: 20px;
       }
-      @media (max-width: 991.98px) {
+      @media (max-width: 578px) {
         .title {
           margin-top: 100px;
         }
@@ -93,10 +93,14 @@ const Cover = ({ t }) => (
           line-height: 1.5;
         }
         .cover-bg {
-          height: 100vw;
+          height: 120vw;
         }
         .cover {
-          height: 100vw;
+          height: 120vw;
+        }
+        .cover-button {
+          display:flex;
+          justify-content:center;
         }
       }
       .bg-dark {
@@ -104,20 +108,21 @@ const Cover = ({ t }) => (
       }
       .download-button {
         height: 46px;
+        width:175px
         background: rgba(255, 226, 183, 1);
         opacity: 1;
         border-radius: 23px;
-        font-size: 18px;
+        font-size: 1rem;
         color: rgba(0, 0, 0, 0.7);
         font-weight: 500;
       }
       .preview-button {
+        width:175px;
         height: 46px;
         background: rgba(255, 255, 255, 1);
         opacity: 1;
         border-radius: 23px;
-        width: 75px;
-        font-size: 18px;
+        font-size: 1rem;
         font-weight: 500;
         line-height: 24px;
         color: rgba(0, 0, 0, 0.7);

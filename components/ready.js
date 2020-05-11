@@ -20,14 +20,14 @@ const Ready = ({ t }) => (
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <div className="row justify-content-center mt-5">
+          <div className="row justify-content-center mt-3 ready-button">
             <Link href="/download">
-              <div className="row download-button col-2 m-3 justify-content-center align-items-center">
+              <div className="row download-button m-2 justify-content-center align-items-center">
                 <div>{t("download")}</div>
               </div>
             </Link>
 
-            <div className="row preview-button col-2 m-3 justify-content-center align-items-center">
+            <div className="row preview-button m-2 justify-content-center align-items-center">
               <a
                 href="https://troyeguo.gitee.io/koodo-web/"
                 target="_blank"
@@ -42,19 +42,19 @@ const Ready = ({ t }) => (
     </div>
     <style jsx>{`
       .question-wrapper {
-        height: 454px;
+        height: 424px;
         background: rgba(255, 226, 183, 1);
         opacity: 1;
         margin-bottom: 80px;
       }
       .question {
-        font-size: calc(1rem + 2.5vw);
+        font-size: calc(1rem + 2vw);
         font-weight: bold;
         line-height: 80px;
         color: rgba(0, 0, 0, 1);
         opacity: 0.83;
         text-align: center;
-        margin-top: 130px;
+        margin-top: 100px;
       }
       .ads {
         font-size: 20px;
@@ -70,7 +70,6 @@ const Ready = ({ t }) => (
         background: rgba(43, 38, 31, 1);
         opacity: 1;
         border-radius: 23px;
-        width: 104px;
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
@@ -83,7 +82,6 @@ const Ready = ({ t }) => (
         background: rgba(255, 255, 255, 1);
         opacity: 1;
         border-radius: 23px;
-        width: 75px;
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
@@ -93,6 +91,12 @@ const Ready = ({ t }) => (
       @media (max-width: 992px) {
         .ads {
           font-size: 17px;
+        }
+      }
+      @media (max-width: 578px) {
+        .ready-button {
+          display: flex;
+          justify-content: center;
         }
       }
     `}</style>

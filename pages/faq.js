@@ -76,7 +76,7 @@ const FAQ = ({ t }) => {
           opacity: 1;
         }
         .faq-answer {
-          font-size: calc(0.6rem + 0.6vw);
+          font-size: calc(0.8rem + 0.4vw);
           font-weight: 500;
           line-height: 24px;
           color: rgba(0, 0, 0, 1);

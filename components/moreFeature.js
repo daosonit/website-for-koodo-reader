@@ -62,7 +62,7 @@ const MoreFeature = ({ t }) => {
             margin: 40px 0px;
           }
           .more-subtitle {
-            padding: 0px 30px;
+            padding: 0px 50px;
           }
         }
       `}</style>

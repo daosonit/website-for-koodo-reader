@@ -21,6 +21,7 @@
     "next-i18next": "^4.4.1",
     "pm2": "^4.4.0",
     "react": "^16.13.1",
+    "react-device-detect": "^1.12.1",
     "react-dom": "^16.13.1"
   }
 }
