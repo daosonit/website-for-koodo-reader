@@ -1,23 +1,25 @@
 {
   "name": "-",
   "version": "1.0.0",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "license": "MIT",
   "engines": {
-    "node": ">=8"
+    "node": ">=10.13.0"
   },
   "scripts": {
     "dev": "node index.js",
     "build": "next build",
     "prestart": "next build",
-    "start": "NODE_ENV=production node index.js"
+    "start": "cross-env NODE_ENV=production node index.js"
   },
   "devDependencies": {},
   "dependencies": {
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "i18next": "^19.4.4",
     "next": "^9.3.6",
     "next-i18next": "^4.4.1",
+    "pm2": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

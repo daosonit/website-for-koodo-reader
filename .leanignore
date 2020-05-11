@@ -1,0 +1,6 @@
+.git/
+.DS_Store
+.avoscloud/
+.leancloud/
+.next/
+node_modules/
