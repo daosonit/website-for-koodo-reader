@@ -10,6 +10,8 @@
     "dev": "node index.js",
     "build": "next build",
     "prestart": "next build",
+    "export": "next export",
+    "preexport": "next build",
     "start": "cross-env NODE_ENV=production node index.js"
   },
   "devDependencies": {},
