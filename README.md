@@ -2,7 +2,12 @@
 
 ### 预览
 
-<img src="/public/images/meta.png">
+<img src="https://i.loli.net/2020/05/24/V89WQLHTA6Mrwux.png">
+<img src="https://i.loli.net/2020/05/24/8M2eTfdl3VQDgm5.png">
+<img src="https://i.loli.net/2020/05/24/Nbh758dHlC6uLg1.png">
+<img src="https://i.loli.net/2020/05/24/g8diKQVqMFGZIkt.png">
+<img src="https://i.loli.net/2020/05/24/DtfnCZb91EsVNyv.png">
+<img src="https://i.loli.net/2020/05/24/DBwUxeq9LPtOb7l.png">
 
 ### 技术栈
 
