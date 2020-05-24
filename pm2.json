@@ -1,0 +1,36 @@
+{
+  "apps": {
+    "name": "Koodo Reader",
+    "script": "index.js",
+    "cwd": "./",
+    "args": "",
+    "interpreter": "",
+    "interpreter_args": "",
+    "watch": true,
+    "ignore_watch": ["node_modules", "logs"],
+    "exec_mode": "fork",
+    "instances": 1,
+    "max_memory_restart": "500M",
+    "error_file": "./logs/app-err.log",
+    "out_file": "./logs/app-out.log",
+    "merge_logs": true,
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "min_uptime": "60s",
+    "max_restarts": 30,
+    "autorestart": true,
+    "cron_restart": "",
+    "restart_delay": 10,
+    "env": {
+      "NODE_ENV": "production",
+      "REMOTE_ADDR": ""
+    },
+    "env_dev": {
+      "NODE_ENV": "development",
+      "REMOTE_ADDR": ""
+    },
+    "env_test": {
+      "NODE_ENV": "test",
+      "REMOTE_ADDR": ""
+    }
+  }
+}
