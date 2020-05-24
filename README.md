@@ -1,4 +1,4 @@
-<h1 align="center">Koodo Reader 的网站源码</h1>
+<h1 align="center">Koodo Reader 官网</h1>
 
 ### 预览
 
