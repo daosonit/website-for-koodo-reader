@@ -3,6 +3,17 @@ import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class CustomDocument extends Document {
+  componentDidMount() {
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "4747dcab-17be-4169-8cfb-41d72b8cd672";
+    (function () {
+      d = document;
+      s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  }
   render() {
     return (
       <Html>
@@ -100,14 +111,11 @@ class CustomDocument extends Document {
             rel="stylesheet"
           />
           <script src="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
-          
         </Head>
         <body>
           <Main />
           <NextScript />
           <script>AOS.init();</script>
-          <script type="text/javascript">
-          window.$crisp=[];window.CRISP_WEBSITE_ID="4747dcab-17be-4169-8cfb-41d72b8cd672";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
         </body>
       </Html>
     );

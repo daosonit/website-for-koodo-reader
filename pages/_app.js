@@ -5,6 +5,7 @@ import Head from "next/head";
 import "../styles/global.css";
 import "../styles/reset.css";
 class MyApp extends App {
+  
   render() {
     const { Component, pageProps } = this.props;
     return (
