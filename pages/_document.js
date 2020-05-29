@@ -105,6 +105,10 @@ class CustomDocument extends Document {
           <Main />
           <NextScript />
           <script>AOS.init();</script>
+          <script
+            src="//code.tidio.co/ppywdpytywuwhd0qr4g9dyyo4b2fpb8k.js"
+            async
+          ></script>
         </body>
       </Html>
     );

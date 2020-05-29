@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "homepage": "https://koodo.960960.xyz",
   "engines": {
     "node": ">=10.13.0"
   },
