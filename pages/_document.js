@@ -3,7 +3,13 @@ import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class CustomDocument extends Document {
-  
+  setGoogleTags() {
+    return {
+      __html: `
+        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', 'UA-149740367-1') 
+      `,
+    };
+  }
   render() {
     return (
       <Html>
@@ -12,26 +18,26 @@ class CustomDocument extends Document {
           <meta name="application-name" content="Koodo Reader" />
           <meta
             name="description"
-            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac and Web"
           />
           <meta name="referrer" content="unsafe-url" />
           <meta
             itemProp="name"
-            content="Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Free Epub Reader for Windows, Mac and Web"
           />
           <meta
             itemProp="description"
-            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac and Web"
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://koodo.960960.xyz" />
           <meta
             property="og:title"
-            content="Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Free Epub Reader for Windows, Mac and Web"
           />
           <meta
             property="og:description"
-            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac and Web"
           />
           <meta
             property="og:image"
@@ -42,11 +48,11 @@ class CustomDocument extends Document {
           <meta property="twitter:url" content="https://koodo.960960.xyz" />
           <meta
             property="twitter:title"
-            content="Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web"
+            content="Koodo Reader - Free Epub Reader for Windows, Mac and Web"
           />
           <meta
             property="twitter:description"
-            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac, Linux and Web"
+            content="Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac and Web"
           />
           <meta
             property="twitter:image"
@@ -56,7 +62,10 @@ class CustomDocument extends Document {
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
           />
-
+          <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+            rel="stylesheet"
+          ></link>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -87,10 +96,6 @@ class CustomDocument extends Document {
             content="/icons/browserconfig.xml"
           />
           <meta name="theme-color" content="#ffffff" />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-          />
           <script src="https://at.alicdn.com/t/font_1803854_8gc5u8bw7eq.js" />
           <link
             href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.min.css"
@@ -101,6 +106,11 @@ class CustomDocument extends Document {
             rel="stylesheet"
           />
           <script src="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-149740367-1"
+          ></script>
+          <script dangerouslySetInnerHTML={this.setGoogleTags()} />
         </Head>
         <body>
           <Main />

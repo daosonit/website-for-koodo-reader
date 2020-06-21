@@ -16,7 +16,8 @@ const Homepage = ({ t }) => (
           <img
             src="/images/demo.png"
             alt="Koodo Reader demo"
-            className="demo"
+            className="demo aos-init"
+            data-aos="fade-up"
           />
         </div>
       </section>

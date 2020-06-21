@@ -66,8 +66,12 @@ const FAQ = ({ t }) => {
           opacity: 0.23;
           border-radius: 21px;
           margin: 40px 20px 0;
+          transition: all 0.5s linear;
         }
-
+        .faq-item:hover {
+          -webkit-box-shadow: 0 6px 14px 0 rgba(26, 26, 26, 0.06);
+          box-shadow: 0 6px 14px 0 rgba(26, 26, 26, 0.06);
+        }
         .faq-question {
           font-size: calc(1rem + 0.7vw);
           font-weight: bold;

@@ -12,7 +12,7 @@
 /.next/
 /out/
 /cache/
-#/_next/
+/_next/
 # production
 #/build
 

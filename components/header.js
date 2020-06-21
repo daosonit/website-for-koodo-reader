@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { withRouter } from "next/router";
 import { i18n, Link, withTranslation } from "../i18n";
-
+import HeaderOption from "./headerOption";
 const Header = ({ t, router }) => {
   const [theme, setTheme] = useState("dark");
   const routeName = router.pathname;
@@ -55,7 +55,7 @@ const Header = ({ t, router }) => {
             <Link href="/">
               {theme === "dark" && routeName === "/" ? (
                 <a>
-                  <svg className="icon icon-black mt-2" aria-hidden="true">
+                  <svg className="icon icon-black" aria-hidden="true">
                     <use href="#icon-zu49"></use>
                   </svg>
                 </a>
@@ -72,144 +72,11 @@ const Header = ({ t, router }) => {
           </div>
 
           <div style={{ position: "relative" }}>
-            <ul className={"row header-collapse mt-4 mr-0"}>
-              {!collapse ? (
-                <div className="row ">
-                  <li className="col-lg-auto mt-2">
-                    <Link href="/faq">
-                      <a
-                        className={
-                          theme === "dark" && routeName === "/" ? "froze" : ""
-                        }
-                      >
-                        {t("faq")}
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="col-lg-auto mt-2">
-                    <Link href="/log">
-                      <a
-                        className={
-                          theme === "dark" && routeName === "/" ? "froze" : ""
-                        }
-                      >
-                        {t("log")}
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="col-lg-auto mt-2">
-                    <Link href="/support">
-                      <a
-                        className={
-                          theme === "dark" && routeName === "/" ? "froze" : ""
-                        }
-                      >
-                        {t("support")}
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="col-lg-auto mt-2">
-                    <a
-                      href="https://github.com/troyeguo/koodo-reader"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={
-                        theme === "dark" && routeName === "/" ? "froze" : ""
-                      }
-                    >
-                      <svg className="icon" aria-hidden="true">
-                        <use href="#icon-github"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li
-                    onClick={() =>
-                      i18n.changeLanguage(i18n.language === "en" ? "cn" : "en")
-                    }
-                    className="col-lg-auto mt-2 pb-3"
-                  >
-                    <a
-                      href="#"
-                      className={
-                        theme === "dark" && routeName === "/" ? "froze" : ""
-                      }
-                    >
-                      <svg className="icon" aria-hidden="true">
-                        <use href="#icon-earth"></use>
-                      </svg>
-                      <span className="change-lang mx-2">{t("lang")}</span>
-                    </a>
-                  </li>
-                </div>
-              ) : null}
-              <div className="row shadow-nav">
-                <li className="col-lg-auto mt-2">
-                  <Link href="/faq">
-                    <a
-                      className={
-                        theme === "dark" && routeName === "/" ? "froze" : ""
-                      }
-                    >
-                      {t("faq")}
-                    </a>
-                  </Link>
-                </li>
-                <li className="col-lg-auto mt-2">
-                  <Link href="/log">
-                    <a
-                      className={
-                        theme === "dark" && routeName === "/" ? "froze" : ""
-                      }
-                    >
-                      {t("log")}
-                    </a>
-                  </Link>
-                </li>
-                <li className="col-lg-auto mt-2">
-                  <Link href="/support">
-                    <a
-                      className={
-                        theme === "dark" && routeName === "/" ? "froze" : ""
-                      }
-                    >
-                      {t("support")}
-                    </a>
-                  </Link>
-                </li>
-                <li className="col-lg-auto mt-2">
-                  <a
-                    href="https://github.com/troyeguo/koodo-reader"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={
-                      theme === "dark" && routeName === "/" ? "froze" : ""
-                    }
-                  >
-                    <svg className="icon" aria-hidden="true">
-                      <use href="#icon-github"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li
-                  onClick={() =>
-                    i18n.changeLanguage(i18n.language === "en" ? "cn" : "en")
-                  }
-                  className="col-lg-auto mt-2 pb-3"
-                >
-                  <a
-                    href="#"
-                    className={
-                      theme === "dark" && routeName === "/" ? "froze" : ""
-                    }
-                  >
-                    <svg className="icon" aria-hidden="true">
-                      <use href="#icon-earth"></use>
-                    </svg>
-                    <span className="change-lang mx-2">{t("lang")}</span>
-                  </a>
-                </li>
+            <ul className={"row header-collapse mt-lg-4 mr-0"}>
+              {!collapse ? <HeaderOption theme={theme} /> : null}
+              <div className=" shadow-nav">
+                <HeaderOption theme={theme} />
               </div>
-
               <svg
                 className="icon icon-more"
                 aria-hidden="true"
@@ -220,7 +87,7 @@ const Header = ({ t, router }) => {
                 <use href="#icon-more"></use>
               </svg>
 
-              <div className={"row mr-4 ml-2"}>
+              <div className={"row ml-3"}>
                 {theme === "dark" && routeName === "/" ? null : (
                   <li className="col-auto">
                     <Link href="/download">
@@ -245,7 +112,7 @@ const Header = ({ t, router }) => {
         .header-wrapper {
           opacity: 1;
           font-size: calc(0.9rem + 0.2vw);
-          font-weight: 500;
+          font-weight: 600;
           line-height: 24px;
           position: fixed;
           top: 0;
@@ -258,7 +125,7 @@ const Header = ({ t, router }) => {
           position: relative;
           bottom: 15px;
           left: 10px;
-          font-weight: 500;
+          font-weight: 600;
           opacity: 0.8;
         }
         .icon-more {
@@ -294,9 +161,9 @@ const Header = ({ t, router }) => {
           .icon-more {
             font-size: 30px;
             position: absolute;
-            top: 20px;
+            top: 10px;
             right: 10px;
-            margin-top: 10px;
+            margin-top: 0px;
           }
           .icon-black {
             font-size: 50px;
@@ -307,13 +174,15 @@ const Header = ({ t, router }) => {
           }
           .header-collapse {
             background-color: ${theme === "light" || routeName !== "/"
-              ? "rgba(240,240,240,0.9)"
-              : "rgba(0, 0, 0, 0.9)"};
+              ? "rgba(250,250,250,1)"
+              : "rgba(0, 0, 0, 1)"};
             text-align: center;
             line-height: 40px;
             width: 200px;
             border-radius: 10px;
             box-shadow: 0 0 8px rgba(75, 75, 75, 0.2);
+            position: relative;
+            top: 10px;
           }
         }
       `}</style>

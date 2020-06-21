@@ -31,7 +31,7 @@ const Cover = ({ t }) => (
 
                 <div className="row preview-button m-2  justify-content-center align-items-center">
                   <a
-                    href="https://troyeguo.gitee.io/koodo-web/"
+                    href="https://reader.960960.xyz"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -112,9 +112,9 @@ const Cover = ({ t }) => (
         background: rgba(255, 226, 183, 1);
         opacity: 1;
         border-radius: 23px;
-        font-size: 1rem;
-        color: rgba(0, 0, 0, 0.7);
-        font-weight: 500;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 600;
       }
       .preview-button {
         width:175px;
@@ -122,10 +122,10 @@ const Cover = ({ t }) => (
         background: rgba(255, 255, 255, 1);
         opacity: 1;
         border-radius: 23px;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 600;
         line-height: 24px;
-        color: rgba(0, 0, 0, 0.7);
+        color: rgba(0, 0, 0, 1);
         opacity: 1;
       }
     `}</style>

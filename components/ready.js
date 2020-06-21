@@ -29,7 +29,7 @@ const Ready = ({ t }) => (
 
             <div className="row preview-button m-2 justify-content-center align-items-center">
               <a
-                href="https://troyeguo.gitee.io/koodo-web/"
+                href="https://reader.960960.xyz"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -71,9 +71,9 @@ const Ready = ({ t }) => (
         opacity: 1;
         border-radius: 23px;
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 24px;
-        color: rgba(255, 226, 183, 1);
+        color: white;
         opacity: 1;
       }
       .preview-button {
@@ -83,9 +83,9 @@ const Ready = ({ t }) => (
         opacity: 1;
         border-radius: 23px;
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 24px;
-        color: rgba(0, 0, 0, 0.7);
+        color: rgba(0, 0, 0, 1);
         opacity: 1;
       }
       @media (max-width: 992px) {

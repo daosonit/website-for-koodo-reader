@@ -1,7 +1,7 @@
 const express = require("express");
 const next = require("next");
 const nextI18NextMiddleware = require("next-i18next/middleware").default;
-
+const compression = require("compression");
 const nextI18next = require("./i18n");
 
 const port = process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000;
@@ -14,7 +14,7 @@ const handle = app.getRequestHandler();
 
   await nextI18next.initPromise;
   server.use(nextI18NextMiddleware(nextI18next));
-
+  server.use(compression());
   server.get("*", (req, res) => handle(req, res));
 
   await server.listen(port);

@@ -4,7 +4,7 @@
   "download": "下载",
   "preview": "预览",
   "title": "开启全新 Epub 阅读体验",
-  "subtitle": "Koodo Reader 是一个免费开源的 Epub 阅读器，支持 Windows, Mac，Linux 和网页版",
+  "subtitle": "Koodo Reader 是一个免费开源的 Epub 阅读器，支持 Windows, Mac和网页版",
   "share-title": "分享给更多朋友",
   "share-subtitle": "把你对 Koodo Reader 的喜爱分享给更多的人",
   "twitter": "推特",
@@ -19,5 +19,6 @@
   "error": "你来到了没有知识的荒原",
   "back": "返回首页",
   "privacy": "隐私策略",
-  "terms": "服务条款"
+  "terms": "服务条款",
+  "download-on-pc": "请在电脑上下载本应用"
 }

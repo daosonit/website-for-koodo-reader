@@ -15,7 +15,10 @@ const Support = ({ t }) => {
               <p className="page-subtitle">{t("support-subtitle")}</p>
             </div>
           </div>
-          <div className="row mt-lg-5 justify-content-center">
+          <div
+            className="row mt-lg-5 justify-content-center aos-init"
+            data-aos="fade-up"
+          >
             <div>
               <div className="row mt-4 justify-content-start mr-0 ml-0">
                 <div className="col-2 pr-0 row justify-content-center">
@@ -63,18 +66,17 @@ const Support = ({ t }) => {
       <style jsx>{`
         .feedback-title {
           font-size: calc(1rem + 0.7vw);
-          font-weight: 500;
+          font-weight: 600;
           line-height: 43px;
           color: rgba(0, 0, 0, 1);
           opacity: 1;
         }
         .feedback-subtitle {
           font-size: 18px;
-          font-family: Segoe UI;
-          font-weight: 500;
           line-height: 25px;
           color: rgba(0, 0, 0, 1);
           opacity: 0.55;
+          font-weight: 500;
         }
         .form-link {
           font-size: 18px;
@@ -88,8 +90,6 @@ const Support = ({ t }) => {
         }
 
         @media (max-width: 992px) {
-          feedback-subtitle {
-          }
           .feedback-subtitle,
           .form-link {
             font-size: 15px;

@@ -21,7 +21,7 @@ class MyApp extends App {
       <>
         <Head>
           <title>
-            Koodo Reader - Free Epub Reader for Windows, Mac, Linux and Web
+            Koodo Reader - Free Epub Reader for Windows, Mac and Web
           </title>
         </Head>
         <Component {...pageProps} />

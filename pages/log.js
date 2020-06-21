@@ -38,7 +38,7 @@ const Log = ({ t }) => {
     });
   };
   const renderLogs = () => {
-    return changeLogs.map((item, index) => {
+    return changeLogs.reverse().map((item, index) => {
       return (
         <div
           data-aos="fade-up"
@@ -105,7 +105,7 @@ const Log = ({ t }) => {
           opacity: 0.59;
         }
         .label-new {
-          width: 50px;
+          min-width: 50px;
           height: 23px;
           background: linear-gradient(
             166deg,
@@ -122,7 +122,7 @@ const Log = ({ t }) => {
           line-height: 23px;
         }
         .label-fix {
-          width: 50px;
+          min-width: 50px;
           height: 23px;
           background: linear-gradient(
             166deg,

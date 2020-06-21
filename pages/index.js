@@ -18,6 +18,7 @@ const Homepage = ({ t }) => (
     <MoreFeature />
     <Ready />
     <Footer />
+    <img src="/images/demo.png" style={{ display: "none" }} />
   </React.Fragment>
 );
 

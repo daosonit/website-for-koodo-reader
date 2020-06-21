@@ -4,5 +4,5 @@ export const moreFeature = [
   { id: 3, icon: "zu16" },
   { id: 4, icon: "zu12" },
   { id: 5, icon: "zu14" },
-  { id: 6, icon: "zu12" },
+  { id: 6, icon: "zu13" },
 ];
