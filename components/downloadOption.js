@@ -13,10 +13,10 @@ const DownloadDemo = ({ t }) => {
       window.location.href = "https://reader.960960.xyz";
     } else if (id === 1) {
       window.location.href =
-        "https://github.com/troyeguo/koodo-reader/releases/download/untagged-91f267485c79c2be2e88/Koodo-Reader-Web-Setup-1.9.0.exe";
+        "https://github.com/troyeguo/koodo-reader/releases/download/v1.9.0/Koodo-Reader-Web-Setup-1.9.0.exe";
     } else {
       window.location.href =
-        "https://github.com/troyeguo/koodo-reader/releases/download/untagged-91f267485c79c2be2e88/Koodo-Reader-1.9.0.dmg";
+        "https://github.com/troyeguo/koodo-reader/releases/download/v1.9.0/Koodo-Reader-1.9.0.dmg";
     }
   };
   const renderDownload = () => {
