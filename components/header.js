@@ -72,7 +72,12 @@ const Header = ({ t, router }) => {
           </div>
 
           <div style={{ position: "relative" }}>
-            <ul className={"row header-collapse mt-lg-4 mr-0"}>
+            <ul
+              className={"row header-collapse mt-lg-4 mr-0"}
+              onMouseLeave={() => {
+                setCollapse(true);
+              }}
+            >
               {!collapse ? <HeaderOption theme={theme} /> : null}
               <div className=" shadow-nav">
                 <HeaderOption theme={theme} />

@@ -1,23 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { downloadOptions } from "../configs/download";
-import { withTranslation, Link } from "../i18n";
+import { withTranslation } from "../i18n";
 import { isMobile } from "react-device-detect";
 const DownloadDemo = ({ t }) => {
-  const handleClick = (id) => {
+  const handleClick = (url) => {
     if (isMobile) {
       alert(t("download-on-pc"));
       return;
     }
-    if (id === 3) {
-      window.location.href = "https://reader.960960.xyz";
-    } else if (id === 1) {
-      window.location.href =
-        "https://github.com/troyeguo/koodo-reader/releases/download/v1.9.0/Koodo-Reader-Web-Setup-1.9.0.exe";
-    } else {
-      window.location.href =
-        "https://github.com/troyeguo/koodo-reader/releases/download/v1.9.0/Koodo-Reader-1.9.0.dmg";
-    }
+    window.location.href = url;
   };
   const renderDownload = () => {
     return downloadOptions.map((item) => {
@@ -34,7 +26,7 @@ const DownloadDemo = ({ t }) => {
           <h1 className="download-title col-12 my-2">{item.title}</h1>
           <a
             onClick={() => {
-              handleClick(item.id);
+              handleClick(item.url);
             }}
           >
             <div className="download-button row justify-content-center align-items-center col-9 m-4">
@@ -56,7 +48,7 @@ const DownloadDemo = ({ t }) => {
           width: 84px;
           height: 27px;
           font-size: 20px;
-          font-weight: 500;
+          font-weight: 600;
           line-height: 27px;
           color: rgba(0, 0, 0, 1);
           opacity: 1;

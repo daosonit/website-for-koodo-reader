@@ -94,9 +94,15 @@ const Cover = ({ t }) => (
         }
         .cover-bg {
           height: 120vw;
+
         }
         .cover {
           height: 120vw;
+          -webkit-filter:blur(5px);
+          -moz-filter:blur(5px);
+          -o-filter:blur(5px);
+          -ms-filter:blur(5px);
+          filter:blur(5px);
         }
         .cover-button {
           display:flex;

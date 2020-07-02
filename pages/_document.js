@@ -43,7 +43,6 @@ class CustomDocument extends Document {
             property="og:image"
             content="https://koodo.960960.xyz/images/meta.png"
           />
-
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://koodo.960960.xyz" />
           <meta
@@ -96,16 +95,17 @@ class CustomDocument extends Document {
             content="/icons/browserconfig.xml"
           />
           <meta name="theme-color" content="#ffffff" />
+          <link
+            href="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.css"
+            rel="stylesheet"
+          />{" "}
+          <script src="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
           <script src="https://at.alicdn.com/t/font_1803854_8gc5u8bw7eq.js" />
           <link
             href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.min.css"
             rel="stylesheet"
           />
-          <link
-            href="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.css"
-            rel="stylesheet"
-          />
-          <script src="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
+          <link rel="dns-prefetch" href="https://koodo.960960.xyz" />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-149740367-1"
