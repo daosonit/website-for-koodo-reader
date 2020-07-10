@@ -1,7 +1,7 @@
 {
   "log-title": "CHANGELOG",
   "log-subtitle": "What's new about each version of Koodo Reader",
-  "fix1-1-0-7": "Fix the bug causing blank screen after importing the backup file",
+  "fix1-1-0-7": "Fix the bug causing blank screen after importing backup file",
   "fix2-1-0-7": "Delete extra testing code from source code",
   "fix3-1-0-7": "Remove the padding setting from setting panel",
   "fix4-1-0-7": "Bolden some options' title",
