@@ -4,7 +4,7 @@ import { withTranslation } from "../i18n";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import { changeLogs } from "../configs/logs";
-changeLogs.reverse();
+const logs = changeLogs.reverse();
 const Log = ({ t }) => {
   const generateLogsInfo = (isNew, item) => {
     let arr = new Array();
@@ -39,7 +39,7 @@ const Log = ({ t }) => {
     });
   };
   const renderLogs = () => {
-    return changeLogs.map((item, index) => {
+    return logs.map((item, index) => {
       return (
         <div
           data-aos="fade-up"
