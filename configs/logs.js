@@ -27,4 +27,11 @@ export const changeLogs = [
     fix: 0,
     new: 3,
   },
+  {
+    version: "1.1.1",
+    versionTag: "1-1-1",
+    date: "13 July, 2020",
+    fix: 3,
+    new: 0,
+  },
 ];

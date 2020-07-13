@@ -79,14 +79,14 @@ const MainFeature = ({ t }) => {
           >
             <img
               src="/images/image4.svg"
-              alt="Organize books with shelfs"
+              alt="Sync data between multiple devices"
               style={{ width: "100%" }}
             />
           </div>
         </div>
       </div>
       <div className="divider"></div>
-      </section>
+    </section>
   );
 };
 MainFeature.getInitialProps = async () => ({
