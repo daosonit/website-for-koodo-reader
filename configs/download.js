@@ -1,5 +1,5 @@
 import { changeLogs } from "./logs";
-const version = changeLogs[changeLogs.length - 1].version;
+const version = changeLogs[0].version;
 export const downloadOptions = [
   {
     id: 1,
