@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../i18n";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { changeLogs } from "../configs/logs";
+import changeLogs from "../configs/logs";
 const Log = ({ t }) => {
   const generateLogsInfo = (isNew, item) => {
     let arr = new Array();

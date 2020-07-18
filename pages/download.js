@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import { withTranslation } from "../i18n";
 import Header from "../components/header";
 import Footer from "../components/footer";

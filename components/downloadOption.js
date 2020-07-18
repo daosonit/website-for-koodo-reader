@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { downloadOptions } from "../configs/download";
+import downloadOptions from "../configs/download";
 import { withTranslation } from "../i18n";
 import { isMobile } from "react-device-detect";
 const DownloadDemo = ({ t }) => {
