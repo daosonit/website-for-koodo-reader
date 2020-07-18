@@ -1,6 +1,6 @@
-import { changeLogs } from "./logs";
+const changeLogs = require("./logs");
 const version = changeLogs[0].version;
-export const downloadOptions = [
+const downloadOptions = [
   {
     id: 1,
     icon: "windows",
@@ -20,3 +20,4 @@ export const downloadOptions = [
     url: "https://reader.960960.xyz",
   },
 ];
+module.exports = downloadOptions;

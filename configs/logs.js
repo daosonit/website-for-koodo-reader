@@ -1,4 +1,4 @@
-export const changeLogs = [
+const changeLogs = [
   {
     version: "1.1.2",
     versionTag: "1-1-2",
@@ -35,3 +35,4 @@ export const changeLogs = [
     new: 2,
   },
 ];
+module.exports = changeLogs;
