@@ -20,6 +20,9 @@ const cors = require("cors");
     res.send({ download: download, log: logs[0] });
   });
   server.get("*", (req, res) => handle(req, res));
+  server.post("/alipay", (req, res) => {
+    res.send({ accountVerified: true, orderVerified: true });
+  });
 
   await server.listen(port);
   console.log(`> Ready on http://localhost:${port}`); // eslint-disable-line no-console
