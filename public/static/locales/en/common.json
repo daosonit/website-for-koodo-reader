@@ -2,7 +2,7 @@
   "ready": "Ready to get started ?",
   "ads": "All your books in one place, organized and safely stored",
   "download": "Download",
-  "preview": "Preview",
+  "preview": "Web Version",
   "title": "Read Epub books with Koodo Reader",
   "subtitle": "Koodo Reader is a open-source epub reader with backup and restore support, runs on Windows, Mac and Web",
   "share-title": "Share your love with the world",
@@ -11,7 +11,7 @@
   "facebook": "Facebook",
   "weibo": "Weibo",
   "feedback": "Feedback",
-  "feedback-subtitle": "For general inquiries, bug reports or feature requests, please fill out the following Google Forms.",
+  "feedback-subtitle": "For general inquiries, bug reports or feature requests, please open an issue on our github page",
   "email": "Email to us",
   "email-subtitle": "Any other questions? Drop us a line to guo362429@gmail.com and we’ll get in touch with you soon.",
   "error": "You're lost in the wasteland of knowledge",
@@ -20,5 +20,6 @@
   "terms": "Terms",
   "support": "SUPPORT",
   "support-subtitle": "You can contact the developer through the following methods",
-  "download-on-pc": "Please download this app on PC"
+  "download-on-pc": "Please download this app on PC",
+  "click-me-to-go": "Click Me"
 }

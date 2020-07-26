@@ -19,7 +19,7 @@ const MainFeature = ({ t }) => {
             <img
               src="/images/image1.svg"
               alt="Take notes while reading"
-              style={{ width: "100%" }}
+              style={{ width: "90%" }}
             />
           </div>
         </div>
@@ -59,7 +59,7 @@ const MainFeature = ({ t }) => {
             <img
               src="/images/image3.svg"
               alt="Take notes while reading"
-              style={{ width: "100%" }}
+              style={{ width: "85%" }}
             />
           </div>
         </div>

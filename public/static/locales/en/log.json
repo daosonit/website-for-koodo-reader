@@ -20,7 +20,7 @@
   "new1-1-1-0": "Add support to Dropbox, Now you can sync data from multiple devices",
   "new2-1-1-0": "Now you can delete notes, bookmarks, digests and highlighters as you want",
   "new3-1-1-0": "Now you can add multiple epubs simultaneously",
-  "fix1-1-1-2": "Make the icon and text of card-mode and list-mode align center",
-  "fix2-1-1-2": "Fix the fullscreen issue after pressing Esc button",
-  "fix3-1-1-2": "Fix the render issue of delete icon"
+  "fix1-1-1-1": "Make the icon and text of card-mode and list-mode align center",
+  "fix2-1-1-1": "Fix the fullscreen issue after pressing Esc button",
+  "fix3-1-1-1": "Fix the render issue of delete icon"
 }

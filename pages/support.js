@@ -32,19 +32,11 @@ const Support = ({ t }) => {
                     {t("feedback-subtitle")}
                   </div>
                   <a
-                    href="https://forms.gle/mHzE3g9RE9BG6X9R8"
+                    href="https://github.com/troyeguo/koodo-reader/issues"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="form-link mt-2">Google Forms</div>
-                  </a>
-
-                  <a
-                    href="https://wj.qq.com/s2/5565378/4b3f"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="form-link">腾讯问卷</div>
+                    <div className="form-link mt-2">{t("click-me-to-go")}</div>
                   </a>
                 </div>
               </div>

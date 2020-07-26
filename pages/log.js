@@ -98,11 +98,11 @@ const Log = ({ t }) => {
           opacity: 0.59;
         }
         .changelog-date {
-          font-size: 15px;
-          font-weight: 500;
-          line-height: 20px;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 30px;
           color: rgba(0, 0, 0, 1);
-          opacity: 0.59;
+          opacity: 0.39;
         }
         .label-new {
           min-width: 50px;

@@ -82,6 +82,7 @@ const Cover = ({ t }) => (
         line-height: 1.5;
         color: rgba(190, 190, 190, 1);
         opacity: 1;
+        font-weight:500;
         margin-top: 20px;
       }
       @media (max-width: 578px) {
