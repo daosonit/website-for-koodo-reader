@@ -13,7 +13,7 @@
   "support": "客户支持",
   "support-subtitle": "您可以通过以下方式与开发者取得联系",
   "feedback": "反馈",
-  "feedback-subtitle": "对于问题咨询，功能改进和 bug 反馈，请前往本项目在github上的issue提交。",
+  "feedback-subtitle": "对于问题咨询，功能改进和 bug 反馈，请前往本项目在github上的issue区提交。",
   "email": "邮箱",
   "email-subtitle": "您也可以直接通过邮箱 guo362429@gmail.com 与开发者取得联系。",
   "error": "你来到了没有知识的荒原",
@@ -21,5 +21,5 @@
   "privacy": "隐私策略",
   "terms": "服务条款",
   "download-on-pc": "请在电脑上下载本应用",
-  "click-me-to-go":"点我前往"
+  "click-me-to-go": "点我前往"
 }
